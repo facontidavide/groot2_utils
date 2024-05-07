@@ -35,7 +35,7 @@ int main(int argc, char** argv)
   groot2::CustomXmlPrinter printer;
   doc.Print(&printer);
 
-  std::string out(printer.CStr(), printer.CStrSize());
+  std::string out(printer.CStr(), printer.CStrSize() - 1);
 
   if(result.count("output"))
   {
