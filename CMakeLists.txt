@@ -25,3 +25,7 @@ add_executable(groot2_formatter
     src/xml_formatter.cpp)
 
 target_link_libraries(groot2_formatter tinyxml_static)
+
+#---- install ----
+
+install(TARGETS groot2_formatter EXPORT groot2_formatterTargets)
