@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(groot2 VERSION 1.5.2)
+project(groot2_formatting VERSION 1.5.2)
 
 enable_language(CXX)
 

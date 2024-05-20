@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="SimpleTree">
+    <Sequence _description="A Sequence executes its children in a specific order:&#10;- horizontal layout: from to to botton &#10;- vertical layout: from left to righ&#10;If a child returns FAILURE, the Sequence stops and returns FAILURE.">
+      <CheckBattery/>
+      <OpenGripper/>
+      <ApproachObject/>
+      <CloseGripper/>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="ApproachObject"
+            editable="true"/>
+    <Condition ID="CheckBattery"
+               editable="true"/>
+    <Action ID="CloseGripper"
+            editable="true"/>
+    <Action ID="OpenGripper"
+            editable="true"/>
+  </TreeNodesModel>
+
+</root>
